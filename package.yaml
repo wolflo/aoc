@@ -29,6 +29,7 @@ library:
   dependencies:
   - linear
   - split
+  - containers
 
 executables:
   aoc-exe:

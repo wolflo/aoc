@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 68ba0830e03717e568a005688b5ad6a999f9efade1742215e4aeca796ab0eaa7
+-- hash: 6eaee1bbade3a0e421cfbf5d4ea31b2dbba0566009d6270898f75a2db711c4c0
 
 name:           aoc
 version:        0.1.0.0
@@ -38,6 +38,7 @@ library
   default-extensions: NoImplicitPrelude
   build-depends:
       base >=4.7 && <5
+    , containers
     , linear
     , split
   default-language: Haskell2010
