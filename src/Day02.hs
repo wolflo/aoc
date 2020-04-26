@@ -1,5 +1,6 @@
 module Day02 where
 
+import Prelude
 import Data.List
 import System.IO
 import Control.Monad

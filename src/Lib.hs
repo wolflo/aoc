@@ -3,6 +3,8 @@ module Lib
     , readListInt
     ) where
 
+import Prelude
+
 readInt :: String -> Int
 readInt = read
 

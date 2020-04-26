@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 37d6bfa2160f84374f7c568db4aeef182bc1a4d6724b9ccbd7def52b51263efc
+-- hash: 68ba0830e03717e568a005688b5ad6a999f9efade1742215e4aeca796ab0eaa7
 
 name:           aoc
 version:        0.1.0.0
@@ -35,8 +35,11 @@ library
       Paths_aoc
   hs-source-dirs:
       src
+  default-extensions: NoImplicitPrelude
   build-depends:
       base >=4.7 && <5
+    , linear
+    , split
   default-language: Haskell2010
 
 executable aoc-exe

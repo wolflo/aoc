@@ -24,6 +24,11 @@ dependencies:
 
 library:
   source-dirs: src
+  default-extensions:
+  - NoImplicitPrelude
+  dependencies:
+  - linear
+  - split
 
 executables:
   aoc-exe:
