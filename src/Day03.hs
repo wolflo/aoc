@@ -12,10 +12,10 @@ import           Lib
 inputPath = "src/inputs/day03.txt"
 
 ----- Part 1
-p1 :: IO ()
+p1 :: IO Int
 p1 = do
   contents <- readFile inputPath
-  print . minCrossDist $ parseInput contents
+  return . minCrossDist $ parseInput contents
 
 parseInput :: String -> [[Disp]]
 parseInput = map (map parseDisp . splitOn ",") . lines
@@ -61,10 +61,10 @@ unitVect dir = case dir of
   _   -> error "cant decode displacement vector"
 
 ----- Part 2
-p2 :: IO ()
+p2 :: IO Int
 p2 = do
   contents <- readFile inputPath
-  print . minTime $ parseInput contents
+  return . minTime $ parseInput contents
 
 minTime :: [[Disp]] -> Int
 minTime disps =  minimum . map timeToPos $ Set.toList meets
